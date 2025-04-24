@@ -23,6 +23,7 @@ const DownloadPage = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        flexDirection: "column",
         position: "absolute",
         top: 0,
         left: 0,
