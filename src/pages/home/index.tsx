@@ -1,17 +1,27 @@
 import React, { useState } from "react";
-import { Button, Typography, CssBaseline, Box } from "@mui/material";
-import CustomInstructText from "../../components/CustomInstructText";
-import CustomDownloadButton from "../../components/CustomButtonDownload";
+import { Box } from "@mui/material";
+import InstructText from "../../components/CustomInstructText";
+import DownloadButton from "../../components/CustomButtonDownload";
+import StepText from "../../components/CustomStepText";
+import Subtitle from "../../components/CustomSubtitle/Index";
+import StepImg from "../../components/CustomStepImg/index";
 
 const DownloadPage = () => {
-  const [downloaded, setDownloaded] = useState(false);
+  // const downloadAnyDesk = () => {
+  //   window.open(
+  //     "https://anydesk.com/pt/downloads/thank-you?dv=win_exe",
+  //     "_blank"
+  //   );
+  //   setDownloaded(true);
+  // };
 
-  const downloadAnyDesk = () => {
-    window.open(
-      "https://anydesk.com/pt/downloads/thank-you?dv=win_exe",
-      "_blank"
-    );
-    setDownloaded(true);
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = `${process.env.PUBLIC_URL}/anydesk.bat`;
+    link.download = "anydesk.bat";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -27,15 +37,92 @@ const DownloadPage = () => {
         position: "absolute",
         top: 0,
         left: 0,
+        overflowX: "hidden",
+        overflowY: "auto",
       }}
     >
       {/* //Texto H1*/}
       <Box textAlign="center" sx={{ mt: 4 }}>
-        <CustomInstructText />
+        <InstructText />
       </Box>
       {/* //Botão de download*/}
       <Box>
-        <CustomDownloadButton onClick={downloadAnyDesk} />
+        <DownloadButton onClick={handleDownload} />
+      </Box>
+      {/* //Subtítulo*/}
+      <Box>
+        <Subtitle text='Após clicar no botão de "Baixar Anydesk" Siga os passos abaixo pra estar executando o arquivo!' />
+      </Box>
+      {/* //StepText1*/}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          mt: 6,
+          width: "100%",
+        }}
+      >
+        <StepText text="Passo 1: O programa será baixado, e pode aparecer de duas formas para você, pois depende do navegador. Se aparecer uma janela (imagem da esquerda), clique em Downloads e em Salvar. Se aparecer em um caixa no canto superior direito (imagem da direita), vá para o próximo passo!" />
+      </Box>
+      {/* //StepImg1*/}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "100px",
+        }}
+      >
+        <StepImg src="/assets/tipoDownload1.png" height="400px" />
+        <StepImg src="/assets/tipoDownload2.png" height="400px" />
+      </Box>
+      {/* //StepText2*/}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          mt: 6,
+          gap: 4,
+          width: "100%",
+        }}
+      >
+        <StepText text="Passo 2: Vá na sua pasta de Downloads e execute o arquivo, ele vai abrir uma janela e carregar as informações, basta aguardar!" />
+      </Box>
+      {/* //StepImg2*/}
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <StepImg src="/assets/abrirArquivo.png" height="700px" />
+      </Box>
+      {/* //StepText3*/}
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          mt: 6,
+          gap: 4,
+          width: "100%",
+        }}
+      >
+        <StepText text="Passo 3: Após o carregamento terminar, o Anydesk vai abrir. Copie o código de 9 números (na parte superior da tela) e encaminhe para o atendente, possibilitando o acesso remoto." />
+      </Box>
+      {/* //StepImg3*/}
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <StepImg src="/assets/anydeskAberto.png" height="700px" />
       </Box>
     </Box>
   );

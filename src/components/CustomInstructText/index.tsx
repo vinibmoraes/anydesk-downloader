@@ -4,7 +4,7 @@ interface InstructTextProps {
   variant?: any;
 }
 
-const CustomInstructText = ({ variant = "h3" }: InstructTextProps) => {
+const InstructText = ({ variant = "h3" }: InstructTextProps) => {
   return (
     <Typography
       variant={variant}
@@ -39,4 +39,4 @@ const CustomInstructText = ({ variant = "h3" }: InstructTextProps) => {
   );
 };
 
-export default CustomInstructText;
+export default InstructText;

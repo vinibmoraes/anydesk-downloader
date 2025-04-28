@@ -1,14 +1,14 @@
 import { Button } from "@mui/material";
 
-interface CustomDownloadButtonProps {
+interface DownloadButtonProps {
   onClick: () => void;
   text?: string;
 }
 
-const CustomDownloadButton = ({
+const DownloadButton = ({
   onClick,
   text = "Baixar AnyDesk",
-}: CustomDownloadButtonProps) => {
+}: DownloadButtonProps) => {
   return (
     <Button
       onClick={onClick}
@@ -41,4 +41,4 @@ const CustomDownloadButton = ({
   );
 };
 
-export default CustomDownloadButton;
+export default DownloadButton;
