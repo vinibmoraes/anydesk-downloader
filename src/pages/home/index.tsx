@@ -63,7 +63,7 @@ const DownloadPage = () => {
           width: "100%",
         }}
       >
-        <StepText text="Passo 1: O programa será baixado, e pode aparecer de duas formas para você, pois depende do navegador. Se aparecer uma janela (imagem da esquerda), clique em Downloads e em Salvar. Se aparecer em um caixa no canto superior direito (imagem da direita), vá para o próximo passo!" />
+        <StepText text="Passo 1: O programa será baixado, e pode aparecer de duas formas para você, pois depende do navegador. Se aparecer uma janela (imagem da esquerda), clique em Downloads e em Salvar. Se aparecer em um caixa no canto da tela (imagem da direita), vá para o próximo passo!" />
       </Box>
       {/* //StepImg1*/}
       <Box
