@@ -24,7 +24,7 @@ const InstructText = ({ variant = "h3" }: InstructTextProps) => {
       <Box
         component="span"
         sx={{
-          background: "linear-gradient(45deg, #ef443b, #EE8D3B)",
+          background: "linear-gradient(135deg, #9c27b0, #6a1b9a)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
           fontWeight: "bold",

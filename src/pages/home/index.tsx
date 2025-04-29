@@ -29,7 +29,7 @@ const DownloadPage = () => {
       sx={{
         width: "100vw",
         minHeight: "100vh",
-        backgroundColor: "#f5f5f5",
+        backgroundImage: "linear-gradient(to bottom, #d1c4e9, #ffffff)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
