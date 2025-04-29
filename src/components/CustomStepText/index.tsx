@@ -13,7 +13,7 @@ const StepText = ({ text }: StepTextProps) => {
           mb: "3.5%",
           display: "flex",
           justifyContent: "flex-start",
-          bgcolor: "gray",
+          bgcolor: "#6a1b9a",
           borderRadius: "5px",
           fontFamily: "'Noto Sans', Calibri, Arial, sans-serif",
           padding: "20px",
