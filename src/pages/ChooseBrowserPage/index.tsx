@@ -27,22 +27,22 @@ const ChooseBrowserPage = () => {
         <BrowserButton
           text="Microsoft Edge"
           iconSrc="/assets/icons/edgeIcon.png"
-          onClick={() => navigate("/steps/edge")}
+          onClick={() => navigate("/AnyDeskEdge")}
         />
         <BrowserButton
           text="Google Chrome"
           iconSrc="/assets/icons/chromeIcon.png"
-          onClick={() => navigate("/steps/chrome")}
+          onClick={() => navigate("/AnyDeskChrome")}
         />
         <BrowserButton
           text="Opera"
           iconSrc="/assets/icons/operaIcon.png"
-          onClick={() => navigate("/steps/opera")}
+          onClick={() => navigate("/AnydeskOpera")}
         />
         <BrowserButton
           text="Outro"
           iconSrc="/assets/icons/outrosNavegadoresIcon.png"
-          onClick={() => navigate("/downloadPageGeneric")}
+          onClick={() => navigate("/AnydeskGeneric")}
         />
       </Box>
     </Box>
