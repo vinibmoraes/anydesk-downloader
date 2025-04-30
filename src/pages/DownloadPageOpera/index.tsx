@@ -66,7 +66,7 @@ const DownloadPageOpera = () => {
           alignItems: "center",
         }}
       >
-        <StepImg src="/assets/OperaPasso1.png" height="400px" />
+        <StepImg src="/assets/OperaPasso1.png" />
       </Box>
       {/* //StepText2*/}
       <Box
