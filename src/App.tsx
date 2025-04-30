@@ -1,13 +1,18 @@
-import React from "react";
-import { CssBaseline } from "@mui/material";
-import DownloadPage from "../src/pages/home/index"; // Ajuste o caminho conforme sua estrutura
+// src/App.tsx
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CssBaseline from "@mui/material/CssBaseline";
+import ChooseBrowserPage from "./pages/ChooseBrowserPage";
+import DownloadPageGeneric from "./pages/DownloadPageGeneric";
 
 function App() {
   return (
-    <>
-      <CssBaseline /> {/* Reset de estilos padrão */}
-      <DownloadPage /> {/* Sua página principal */}
-    </>
+    <Router>
+      <CssBaseline />
+      <Routes>
+        <Route path="/" element={<ChooseBrowserPage />} />
+        <Route path="/downloadPageGeneric" element={<DownloadPageGeneric />} />
+      </Routes>
+    </Router>
   );
 }
 

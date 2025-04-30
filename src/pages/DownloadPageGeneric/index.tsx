@@ -6,15 +6,7 @@ import StepText from "../../components/CustomStepText";
 import Subtitle from "../../components/CustomSubtitle/Index";
 import StepImg from "../../components/CustomStepImg/index";
 
-const DownloadPage = () => {
-  // const downloadAnyDesk = () => {
-  //   window.open(
-  //     "https://anydesk.com/pt/downloads/thank-you?dv=win_exe",
-  //     "_blank"
-  //   );
-  //   setDownloaded(true);
-  // };
-
+const DownloadPageGeneric = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = `${process.env.PUBLIC_URL}/anydesk.bat`;
@@ -128,4 +120,4 @@ const DownloadPage = () => {
   );
 };
 
-export default DownloadPage;
+export default DownloadPageGeneric;
