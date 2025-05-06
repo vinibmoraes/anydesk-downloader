@@ -19,8 +19,8 @@ const DownloadPageEdge = () => {
   return (
     <Box
       sx={{
-        width: "100vw",
-        minHeight: "100vh",
+        width: "100%",
+        minHeight: "100%",
         backgroundImage: "linear-gradient(to bottom, #d1c4e9, #ffffff)",
         display: "flex",
         justifyContent: "center",
@@ -34,7 +34,7 @@ const DownloadPageEdge = () => {
       }}
     >
       {/* //Texto H1*/}
-      <Box textAlign="center" sx={{ mt: 4 }}>
+      <Box textAlign="center" sx={{ mt: "4%" }}>
         <InstructText />
       </Box>
       {/* //Botão de download*/}
@@ -51,7 +51,7 @@ const DownloadPageEdge = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mt: 6,
+          mt: "3%",
           width: "100%",
         }}
       >
@@ -64,7 +64,7 @@ const DownloadPageEdge = () => {
           flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
-          gap: "100px",
+          gap: "10%",
         }}
       >
         <StepImg src="/assets/edgePasso1.png" height="400px" />
@@ -76,8 +76,7 @@ const DownloadPageEdge = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mt: 6,
-          gap: 4,
+          mt: "3%",
           width: "100%",
         }}
       >
@@ -99,8 +98,7 @@ const DownloadPageEdge = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mt: 6,
-          gap: 4,
+          mt: "3%",
           width: "100%",
         }}
       >

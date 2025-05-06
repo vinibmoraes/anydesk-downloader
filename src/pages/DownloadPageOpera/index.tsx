@@ -19,8 +19,8 @@ const DownloadPageOpera = () => {
   return (
     <Box
       sx={{
-        width: "100vw",
-        minHeight: "100vh",
+        width: "100%",
+        minHeight: "100%",
         backgroundImage: "linear-gradient(to bottom, #d1c4e9, #ffffff)",
         display: "flex",
         justifyContent: "center",
@@ -34,7 +34,7 @@ const DownloadPageOpera = () => {
       }}
     >
       {/* //Texto H1*/}
-      <Box textAlign="center" sx={{ mt: 4 }}>
+      <Box textAlign="center" sx={{ mt: "4%" }}>
         <InstructText />
       </Box>
       {/* //Botão de download*/}
@@ -51,7 +51,7 @@ const DownloadPageOpera = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mt: 6,
+          mt: "3%",
           width: "100%",
         }}
       >
@@ -74,8 +74,7 @@ const DownloadPageOpera = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mt: 6,
-          gap: 4,
+          mt: "3%",
           width: "100%",
         }}
       >
@@ -97,8 +96,7 @@ const DownloadPageOpera = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mt: 6,
-          gap: 4,
+          mt: "3%",
           width: "100%",
         }}
       >

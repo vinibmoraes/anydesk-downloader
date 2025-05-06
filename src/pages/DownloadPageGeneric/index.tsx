@@ -34,7 +34,7 @@ const DownloadPageGeneric = () => {
       }}
     >
       {/* //Texto H1*/}
-      <Box textAlign="center" sx={{ mt: 4 }}>
+      <Box textAlign="center" sx={{ mt: "4%" }}>
         <InstructText />
       </Box>
       {/* //Botão de download*/}
@@ -51,7 +51,7 @@ const DownloadPageGeneric = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mt: 6,
+          mt: "3%",
           width: "100%",
         }}
       >
@@ -64,7 +64,7 @@ const DownloadPageGeneric = () => {
           flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
-          gap: "100px",
+          gap: "10%",
         }}
       >
         <StepImg src="/assets/tipoDownload1.png" height="400px" />
@@ -76,8 +76,7 @@ const DownloadPageGeneric = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mt: 6,
-          gap: 4,
+          mt: "3%",
           width: "100%",
         }}
       >
@@ -99,8 +98,7 @@ const DownloadPageGeneric = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mt: 6,
-          gap: 4,
+          mt: "3%",
           width: "100%",
         }}
       >
